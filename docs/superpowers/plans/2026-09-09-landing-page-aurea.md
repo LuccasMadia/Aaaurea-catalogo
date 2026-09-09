@@ -1,6 +1,6 @@
 # Landing Page "Áurea" Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Build a static Next.js landing page + product detail page for "Áurea", a fictional Christian modest-fashion brand ("conceito over"), as a portfolio piece — catalog with category filter, WhatsApp order flow, no backend.
 
@@ -39,7 +39,7 @@
 - Produces: Tailwind color tokens `cream`, `ink`, `gold`, `terracotta`, `warmgray`; font families `font-serif` (Playfair Display), `font-sans` (Inter); import alias `@/*`.
 - Consumes: nothing (first task).
 
-- [ ] **Step 1: Create `package.json`**
+- [x] **Step 1: Create `package.json`**
 
 ```json
 {
@@ -71,7 +71,7 @@
 }
 ```
 
-- [ ] **Step 2: Create `tsconfig.json`**
+- [x] **Step 2: Create `tsconfig.json`**
 
 ```json
 {
@@ -97,7 +97,7 @@
 }
 ```
 
-- [ ] **Step 3: Create `next.config.js`**
+- [x] **Step 3: Create `next.config.js`**
 
 ```js
 /** @type {import('next').NextConfig} */
@@ -115,7 +115,7 @@ const nextConfig = {
 module.exports = nextConfig;
 ```
 
-- [ ] **Step 4: Create `tailwind.config.ts`**
+- [x] **Step 4: Create `tailwind.config.ts`**
 
 ```ts
 import type { Config } from "tailwindcss";
@@ -143,7 +143,7 @@ const config: Config = {
 export default config;
 ```
 
-- [ ] **Step 5: Create `postcss.config.js`**
+- [x] **Step 5: Create `postcss.config.js`**
 
 ```js
 module.exports = {
@@ -154,7 +154,7 @@ module.exports = {
 };
 ```
 
-- [ ] **Step 6: Create `.gitignore`**
+- [x] **Step 6: Create `.gitignore`**
 
 ```
 node_modules
@@ -165,7 +165,7 @@ npm-debug.log*
 next-env.d.ts
 ```
 
-- [ ] **Step 7: Create `app/globals.css`**
+- [x] **Step 7: Create `app/globals.css`**
 
 ```css
 @tailwind base;
@@ -173,7 +173,7 @@ next-env.d.ts
 @tailwind utilities;
 ```
 
-- [ ] **Step 8: Create `app/layout.tsx`**
+- [x] **Step 8: Create `app/layout.tsx`**
 
 ```tsx
 import type { Metadata } from "next";
@@ -215,7 +215,7 @@ export default function RootLayout({
 }
 ```
 
-- [ ] **Step 9: Create placeholder `app/page.tsx`**
+- [x] **Step 9: Create placeholder `app/page.tsx`**
 
 ```tsx
 export default function Home() {
@@ -227,22 +227,22 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 10: Install dependencies**
+- [x] **Step 10: Install dependencies**
 
 Run: `npm install`
 Expected: installs without errors, creates `node_modules/` and `package-lock.json`.
 
-- [ ] **Step 11: Verify the build compiles**
+- [x] **Step 11: Verify the build compiles**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully`.
 
-- [ ] **Step 12: Verify the page renders**
+- [x] **Step 12: Verify the page renders**
 
 Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Áurea" && kill %1`
 Expected: prints `Áurea`.
 
-- [ ] **Step 13: Commit**
+- [x] **Step 13: Commit**
 
 ```bash
 git add package.json package-lock.json tsconfig.json next.config.js tailwind.config.ts postcss.config.js .gitignore app/globals.css app/layout.tsx app/page.tsx
@@ -267,7 +267,7 @@ git commit -m "chore: scaffold Next.js + Tailwind project"
   - `STORE_WHATSAPP_NUMBER: string`
   - `buildWhatsAppUrl(productName: string, size: string): string`
 
-- [ ] **Step 1: Create `data/products.ts`**
+- [x] **Step 1: Create `data/products.ts`**
 
 ```ts
 export interface Product {
@@ -403,7 +403,7 @@ export function getCategories(): string[] {
 }
 ```
 
-- [ ] **Step 2: Create `lib/whatsapp.ts`**
+- [x] **Step 2: Create `lib/whatsapp.ts`**
 
 ```ts
 // Número de WhatsApp placeholder — substituir pelo número real da loja
@@ -417,12 +417,12 @@ export function buildWhatsAppUrl(productName: string, size: string): string {
 }
 ```
 
-- [ ] **Step 3: Verify types compile**
+- [x] **Step 3: Verify types compile**
 
 Run: `npx tsc --noEmit`
 Expected: no output, exit code 0.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add data/products.ts lib/whatsapp.ts
@@ -442,7 +442,7 @@ git commit -m "feat: add static product data and WhatsApp URL builder"
 - Consumes: nothing new.
 - Produces: `Header` (no props), `Footer` (no props) — reused on both home and product pages.
 
-- [ ] **Step 1: Create `components/Header.tsx`**
+- [x] **Step 1: Create `components/Header.tsx`**
 
 ```tsx
 import Link from "next/link";
@@ -471,7 +471,7 @@ export default function Header() {
 }
 ```
 
-- [ ] **Step 2: Create `components/Footer.tsx`**
+- [x] **Step 2: Create `components/Footer.tsx`**
 
 ```tsx
 export default function Footer() {
@@ -510,7 +510,7 @@ export default function Footer() {
 }
 ```
 
-- [ ] **Step 3: Modify `app/page.tsx`**
+- [x] **Step 3: Modify `app/page.tsx`**
 
 ```tsx
 import Header from "@/components/Header";
@@ -529,17 +529,17 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 4: Verify the build compiles**
+- [x] **Step 4: Verify the build compiles**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully`.
 
-- [ ] **Step 5: Verify header and footer render**
+- [x] **Step 5: Verify header and footer render**
 
 Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Instagram" && kill %1`
 Expected: prints `Instagram`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add components/Header.tsx components/Footer.tsx app/page.tsx
@@ -558,7 +558,7 @@ git commit -m "feat: add site header and footer"
 - Consumes: nothing new.
 - Produces: `Hero` (no props).
 
-- [ ] **Step 1: Create `components/Hero.tsx`**
+- [x] **Step 1: Create `components/Hero.tsx`**
 
 ```tsx
 import Image from "next/image";
@@ -600,7 +600,7 @@ export default function Hero() {
 }
 ```
 
-- [ ] **Step 2: Modify `app/page.tsx`**
+- [x] **Step 2: Modify `app/page.tsx`**
 
 ```tsx
 import Header from "@/components/Header";
@@ -620,17 +620,17 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 3: Verify the build compiles**
+- [x] **Step 3: Verify the build compiles**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully`.
 
-- [ ] **Step 4: Verify hero renders**
+- [x] **Step 4: Verify hero renders**
 
 Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Vestindo Identidade e Propósito" && kill %1`
 Expected: prints `Vestindo Identidade e Propósito`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add components/Hero.tsx app/page.tsx
@@ -649,7 +649,7 @@ git commit -m "feat: add hero section"
 - Consumes: nothing new.
 - Produces: `AboutSection` (no props).
 
-- [ ] **Step 1: Create `components/AboutSection.tsx`**
+- [x] **Step 1: Create `components/AboutSection.tsx`**
 
 ```tsx
 export default function AboutSection() {
@@ -674,7 +674,7 @@ export default function AboutSection() {
 }
 ```
 
-- [ ] **Step 2: Modify `app/page.tsx`**
+- [x] **Step 2: Modify `app/page.tsx`**
 
 ```tsx
 import Header from "@/components/Header";
@@ -696,17 +696,17 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 3: Verify the build compiles**
+- [x] **Step 3: Verify the build compiles**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully`.
 
-- [ ] **Step 4: Verify about section renders**
+- [x] **Step 4: Verify about section renders**
 
 Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Moda que veste o que você acredita" && kill %1`
 Expected: prints `Moda que veste o que você acredita`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add components/AboutSection.tsx app/page.tsx
@@ -732,7 +732,7 @@ git commit -m "feat: add about/propósito section"
   - `CategoryFilter({ categories: string[]; selected: string; onSelect: (category: string) => void })`
   - `CatalogSection({ products: Product[]; categories: string[] })` — client component, owns filter state, renders `#colecao` section.
 
-- [ ] **Step 1: Create `components/ProductCard.tsx`**
+- [x] **Step 1: Create `components/ProductCard.tsx`**
 
 ```tsx
 import Image from "next/image";
@@ -770,7 +770,7 @@ export default function ProductCard({ product }: { product: Product }) {
 }
 ```
 
-- [ ] **Step 2: Create `components/ProductGrid.tsx`**
+- [x] **Step 2: Create `components/ProductGrid.tsx`**
 
 ```tsx
 import ProductCard from "./ProductCard";
@@ -795,7 +795,7 @@ export default function ProductGrid({ products }: { products: Product[] }) {
 }
 ```
 
-- [ ] **Step 3: Create `components/CategoryFilter.tsx`**
+- [x] **Step 3: Create `components/CategoryFilter.tsx`**
 
 ```tsx
 interface CategoryFilterProps {
@@ -832,7 +832,7 @@ export default function CategoryFilter({
 }
 ```
 
-- [ ] **Step 4: Create `components/CatalogSection.tsx`**
+- [x] **Step 4: Create `components/CatalogSection.tsx`**
 
 ```tsx
 "use client";
@@ -877,7 +877,7 @@ export default function CatalogSection({
 }
 ```
 
-- [ ] **Step 5: Modify `app/page.tsx`**
+- [x] **Step 5: Modify `app/page.tsx`**
 
 ```tsx
 import Header from "@/components/Header";
@@ -902,17 +902,17 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 6: Verify the build compiles**
+- [x] **Step 6: Verify the build compiles**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully`.
 
-- [ ] **Step 7: Verify catalog renders with products**
+- [x] **Step 7: Verify catalog renders with products**
 
 Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Camiseta Over Luz" && kill %1`
 Expected: prints `Camiseta Over Luz`.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add components/ProductCard.tsx components/ProductGrid.tsx components/CategoryFilter.tsx components/CatalogSection.tsx app/page.tsx
@@ -931,7 +931,7 @@ git commit -m "feat: add filterable product catalog to home page"
 - Consumes: nothing new.
 - Produces: `ValuesSection` (no props). Finalizes home page section order: Hero → About → Catalog → Values.
 
-- [ ] **Step 1: Create `components/ValuesSection.tsx`**
+- [x] **Step 1: Create `components/ValuesSection.tsx`**
 
 ```tsx
 const values = [
@@ -971,7 +971,7 @@ export default function ValuesSection() {
 }
 ```
 
-- [ ] **Step 2: Modify `app/page.tsx`**
+- [x] **Step 2: Modify `app/page.tsx`**
 
 ```tsx
 import Header from "@/components/Header";
@@ -998,17 +998,17 @@ export default function Home() {
 }
 ```
 
-- [ ] **Step 3: Verify the build compiles**
+- [x] **Step 3: Verify the build compiles**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully`.
 
-- [ ] **Step 4: Verify values section renders**
+- [x] **Step 4: Verify values section renders**
 
 Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Feito pra durar" && kill %1`
 Expected: prints `Feito pra durar`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add components/ValuesSection.tsx app/page.tsx
@@ -1035,7 +1035,7 @@ git commit -m "feat: add values section and finalize home page layout"
   - `ProductPurchasePanel({ product: Product })` — client component combining size selection + WhatsApp button.
   - Route `/produto/[slug]` — statically generated for all products, calls `notFound()` for unknown slugs.
 
-- [ ] **Step 1: Create `components/WhatsAppButton.tsx`**
+- [x] **Step 1: Create `components/WhatsAppButton.tsx`**
 
 ```tsx
 interface WhatsAppButtonProps {
@@ -1060,7 +1060,7 @@ export default function WhatsAppButton({
 }
 ```
 
-- [ ] **Step 2: Create `components/ProductGallery.tsx`**
+- [x] **Step 2: Create `components/ProductGallery.tsx`**
 
 ```tsx
 "use client";
@@ -1114,7 +1114,7 @@ export default function ProductGallery({
 }
 ```
 
-- [ ] **Step 3: Create `components/SizeSelector.tsx`**
+- [x] **Step 3: Create `components/SizeSelector.tsx`**
 
 ```tsx
 interface SizeSelectorProps {
@@ -1154,7 +1154,7 @@ export default function SizeSelector({
 }
 ```
 
-- [ ] **Step 4: Create `components/ProductPurchasePanel.tsx`**
+- [x] **Step 4: Create `components/ProductPurchasePanel.tsx`**
 
 ```tsx
 "use client";
@@ -1185,7 +1185,7 @@ export default function ProductPurchasePanel({
 }
 ```
 
-- [ ] **Step 5: Create `app/produto/[slug]/page.tsx`**
+- [x] **Step 5: Create `app/produto/[slug]/page.tsx`**
 
 ```tsx
 import { notFound } from "next/navigation";
@@ -1245,22 +1245,22 @@ export default function ProductPage({
 }
 ```
 
-- [ ] **Step 6: Verify the build compiles and prerenders product routes**
+- [x] **Step 6: Verify the build compiles and prerenders product routes**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully` and lists `/produto/[slug]` among the generated routes.
 
-- [ ] **Step 7: Verify a real product page renders**
+- [x] **Step 7: Verify a real product page renders**
 
 Run: `npm run dev & sleep 5 && curl -s http://localhost:3000/produto/camiseta-over-luz | grep -o "Quero esse no WhatsApp" && kill %1`
 Expected: prints `Quero esse no WhatsApp`.
 
-- [ ] **Step 8: Verify an unknown slug returns 404**
+- [x] **Step 8: Verify an unknown slug returns 404**
 
 Run: `npm run dev & sleep 5 && curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/produto/produto-inexistente && kill %1`
 Expected: prints `404`.
 
-- [ ] **Step 9: Commit**
+- [x] **Step 9: Commit**
 
 ```bash
 git add components/WhatsAppButton.tsx components/ProductGallery.tsx components/SizeSelector.tsx components/ProductPurchasePanel.tsx app/produto
@@ -1278,12 +1278,12 @@ git commit -m "feat: add product detail page with WhatsApp order flow"
 - Consumes: the full site built in Tasks 1-8.
 - Produces: nothing new — this task only verifies and fixes.
 
-- [ ] **Step 1: Start the dev server**
+- [x] **Step 1: Start the dev server**
 
 Run: `npm run dev`
 Expected: server starts on `http://localhost:3000` without errors.
 
-- [ ] **Step 2: Manually check the home page in the browser at three breakpoints**
+- [x] **Step 2: Manually check the home page in the browser at three breakpoints**
 
 Open `http://localhost:3000` and resize (or use browser dev tools device toolbar) to check:
 - Mobile (~375px wide): hero stacks vertically, nav links hidden (hamburger not required — links can simply be hidden per current `sm:flex` header), product grid shows 2 columns, category filter buttons wrap without overflow.
@@ -1292,18 +1292,18 @@ Open `http://localhost:3000` and resize (or use browser dev tools device toolbar
 
 Fix any overflow/wrapping issue found by adjusting the relevant Tailwind classes in the affected component.
 
-- [ ] **Step 3: Confirm the "broken image" requirement is satisfied by design**
+- [x] **Step 3: Confirm the "broken image" requirement is satisfied by design**
 
-The spec requires a consistent-with-the-palette fallback when a product image is missing/broken. Every image in this build comes from `https://placehold.co` (a single reliable, controlled source rendered in the brand palette) rather than externally hosted real photos — so there is no scenario where an unreliable third-party photo fails to load. Confirm this by loading the home page and a product page with dev tools' Network tab open: all `placehold.co` image requests should return `200`. No `onError` fallback code is needed while placeholders are in use; add one when real product photography (hosted elsewhere) replaces the placeholders.
+**Update from execution:** the original plan for this step assumed `https://placehold.co` was a reliable external source. During QA it turned out to be unreachable from this environment — Next's Image Optimizer logged `The requested resource isn't a valid image ... received null` for every `placehold.co` URL, breaking every image on the site. Fixed by replacing `placehold.co` with `lib/placeholder.ts`, which generates the same brand-palette placeholders as inline SVG data URIs (no network dependency at all) and marking the `<Image>` usages `unoptimized` since data URIs don't need Next's remote-image optimizer. This makes the "broken image" scenario structurally impossible while placeholders are in use (there is no network request that can fail); add real `onError` handling if/when real, externally-hosted product photography replaces these placeholders. Confirm by loading the home page and a product page — all images should render the SVG placeholder text, and the dev server log should show no `⨯` image errors.
 
-- [ ] **Step 4: Manually check a product detail page**
+- [x] **Step 4: Manually check a product detail page**
 
 Open `http://localhost:3000/produto/camiseta-over-luz`:
 - Confirm gallery thumbnails switch the main image on click.
 - Confirm selecting a different size updates the WhatsApp link (inspect the link's `href` in dev tools — it should contain the new size, e.g. `tamanho%20G`).
 - Confirm the layout stacks to a single column on mobile width and two columns on desktop.
 
-- [ ] **Step 5: Check color contrast**
+- [x] **Step 5: Check color contrast**
 
 Using browser dev tools' accessibility/contrast checker (or a manual check), confirm:
 - Body text (`warmgray` `#6B6058` on `cream` `#F5F0E8`) passes WCAG AA for normal text (contrast ratio ≥ 4.5:1).
@@ -1311,12 +1311,14 @@ Using browser dev tools' accessibility/contrast checker (or a manual check), con
 
 If `warmgray` fails AA, darken it in `tailwind.config.ts` (e.g. to `#5A4F47`) and re-check.
 
-- [ ] **Step 6: Run a final full build**
+**Update from execution:** `warmgray` and `ink` both passed comfortably (measured 5.38:1 and 13.6:1 against `cream` via `getComputedStyle` in a live browser tab). `gold` (`#C9A961`), however, is also used as a *text* color for eyebrow/label copy (e.g. "LINHA CRISTÃ · MODA MODESTA", category labels) and measured only ~2:1 — a real AA failure. Fixed by adding a `goldtext` token (`#806428`, measured 4.91:1) in `tailwind.config.ts` and swapping every `text-gold`/`hover:text-gold` usage to `goldtext`, while leaving `gold` itself for backgrounds/borders (`bg-gold`, `border-gold`), where its contrast pairing with `ink` text already passes.
+
+- [x] **Step 6: Run a final full build**
 
 Run: `npm run build`
 Expected: output contains `Compiled successfully` with no warnings about missing `alt` text or accessibility issues.
 
-- [ ] **Step 7: Commit any fixes made during this pass**
+- [x] **Step 7: Commit any fixes made during this pass**
 
 ```bash
 git add -A
