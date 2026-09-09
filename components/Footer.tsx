@@ -11,7 +11,7 @@ export default function Footer() {
             href="https://www.instagram.com/aaaurea_/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-gold"
+            className="transition-colors hover:text-goldtext"
           >
             Instagram
           </a>
@@ -19,7 +19,7 @@ export default function Footer() {
             href="https://wa.me/5511999999999"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-gold"
+            className="transition-colors hover:text-goldtext"
           >
             WhatsApp
           </a>

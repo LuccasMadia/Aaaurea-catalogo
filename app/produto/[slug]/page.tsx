@@ -30,7 +30,7 @@ export default function ProductPage({
             productName={product.name}
           />
           <div>
-            <p className="text-sm uppercase tracking-widest text-gold">
+            <p className="text-sm uppercase tracking-widest text-goldtext">
               {product.category}
             </p>
             <h1 className="mt-2 font-serif text-3xl text-ink sm:text-4xl">

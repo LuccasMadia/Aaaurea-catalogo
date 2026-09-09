@@ -21,7 +21,7 @@ export default function CategoryFilter({
           className={`rounded-full border px-5 py-2 text-sm uppercase tracking-widest transition-colors ${
             selected === option
               ? "border-ink bg-ink text-cream"
-              : "border-ink/20 text-warmgray hover:border-gold hover:text-gold"
+              : "border-ink/20 text-warmgray hover:border-gold hover:text-goldtext"
           }`}
         >
           {option}

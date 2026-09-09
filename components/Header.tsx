@@ -8,13 +8,13 @@ export default function Header() {
           Áurea
         </Link>
         <nav className="hidden gap-8 text-sm uppercase tracking-widest text-warmgray sm:flex">
-          <a href="/#colecao" className="transition-colors hover:text-gold">
+          <a href="/#colecao" className="transition-colors hover:text-goldtext">
             Coleção
           </a>
-          <a href="/#sobre" className="transition-colors hover:text-gold">
+          <a href="/#sobre" className="transition-colors hover:text-goldtext">
             Sobre
           </a>
-          <a href="/#contato" className="transition-colors hover:text-gold">
+          <a href="/#contato" className="transition-colors hover:text-goldtext">
             Contato
           </a>
         </nav>

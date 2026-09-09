@@ -2,7 +2,7 @@ export default function AboutSection() {
   return (
     <section id="sobre" className="border-y border-ink/10 bg-white/40">
       <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-gold">
+        <p className="mb-3 text-sm uppercase tracking-[0.2em] text-goldtext">
           Nossa história
         </p>
         <h2 className="font-serif text-3xl text-ink sm:text-4xl">

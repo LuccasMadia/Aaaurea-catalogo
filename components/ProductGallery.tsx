@@ -19,6 +19,7 @@ export default function ProductGallery({
           src={images[active]}
           alt={productName}
           fill
+          unoptimized
           className="object-cover"
           priority
         />
@@ -38,6 +39,7 @@ export default function ProductGallery({
                 src={image}
                 alt={`${productName} ${index + 1}`}
                 fill
+                unoptimized
                 className="object-cover"
               />
             </button>

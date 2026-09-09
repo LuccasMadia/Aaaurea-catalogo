@@ -1,3 +1,5 @@
+import { placeholderImage } from "@/lib/placeholder";
+
 export interface Product {
   slug: string;
   name: string;
@@ -13,8 +15,8 @@ export const categories = ["Camisetas Over", "Shorts", "Saias", "Tops"] as const
 const oversizedSizes = ["P", "M", "G", "GG"];
 const bottomSizes = ["36", "38", "40", "42"];
 
-// Imagens placeholder (placehold.co) — trocar por fotografia real dos
-// produtos do cliente antes de publicar.
+// Imagens placeholder geradas localmente (ver lib/placeholder.ts) — trocar
+// por fotografia real dos produtos do cliente antes de publicar.
 export const products: Product[] = [
   {
     slug: "camiseta-over-luz",
@@ -22,8 +24,8 @@ export const products: Product[] = [
     price: 129.9,
     category: "Camisetas Over",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Camiseta+Over+Luz",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Camiseta+Over+Luz+2",
+      placeholderImage("Camiseta Over Luz"),
+      placeholderImage("Camiseta Over Luz 2", "EDE4D3"),
     ],
     description:
       "Camiseta oversized 100% algodão, caimento solto e confortável, com estampa minimalista inspirada em luz e propósito.",
@@ -35,8 +37,8 @@ export const products: Product[] = [
     price: 139.9,
     category: "Camisetas Over",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Camiseta+Over+Graca",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Camiseta+Over+Graca+2",
+      placeholderImage("Camiseta Over Graça"),
+      placeholderImage("Camiseta Over Graça 2", "EDE4D3"),
     ],
     description:
       "Modelagem over em algodão pesado, gola careca reforçada e estampa discreta bordada no peito.",
@@ -48,8 +50,8 @@ export const products: Product[] = [
     price: 99.9,
     category: "Shorts",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Short+Essencia",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Short+Essencia+2",
+      placeholderImage("Short Essência"),
+      placeholderImage("Short Essência 2", "EDE4D3"),
     ],
     description:
       "Short de alfaiataria leve, cintura alta e caimento reto — conforto pro dia a dia sem perder a elegância.",
@@ -61,8 +63,8 @@ export const products: Product[] = [
     price: 109.9,
     category: "Shorts",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Short+Alto+Proposito",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Short+Alto+Proposito+2",
+      placeholderImage("Short Alto Propósito"),
+      placeholderImage("Short Alto Propósito 2", "EDE4D3"),
     ],
     description:
       "Cintura super alta, tecido estruturado e comprimento pensado pra modéstia sem abrir mão do estilo.",
@@ -74,8 +76,8 @@ export const products: Product[] = [
     price: 159.9,
     category: "Saias",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Saia+Midi+Serenidade",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Saia+Midi+Serenidade+2",
+      placeholderImage("Saia Midi Serenidade"),
+      placeholderImage("Saia Midi Serenidade 2", "EDE4D3"),
     ],
     description:
       "Saia midi fluida em tecido leve, caimento solto e fenda discreta — versátil do trabalho ao culto de domingo.",
@@ -87,8 +89,8 @@ export const products: Product[] = [
     price: 169.9,
     category: "Saias",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Saia+Plissada+Fe",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Saia+Plissada+Fe+2",
+      placeholderImage("Saia Plissada Fé"),
+      placeholderImage("Saia Plissada Fé 2", "EDE4D3"),
     ],
     description:
       "Plissado fino de comprimento midi, elástico na cintura e caimento leve em movimento.",
@@ -100,8 +102,8 @@ export const products: Product[] = [
     price: 79.9,
     category: "Tops",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Top+Cropped+Aurora",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Top+Cropped+Aurora+2",
+      placeholderImage("Top Cropped Aurora"),
+      placeholderImage("Top Cropped Aurora 2", "EDE4D3"),
     ],
     description:
       "Top cropped de alças largas em malha canelada, pensado pra compor looks em camadas com modéstia.",
@@ -113,8 +115,8 @@ export const products: Product[] = [
     price: 84.9,
     category: "Tops",
     images: [
-      "https://placehold.co/800x1000/F5F0E8/2A2320?text=Top+Alcas+Renovo",
-      "https://placehold.co/800x1000/EDE4D3/2A2320?text=Top+Alcas+Renovo+2",
+      placeholderImage("Top Alças Renovo"),
+      placeholderImage("Top Alças Renovo 2", "EDE4D3"),
     ],
     description:
       "Alças ajustáveis, tecido leve e caimento solto — feito pra usar por baixo de camisas over ou sozinho.",

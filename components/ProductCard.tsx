@@ -13,11 +13,12 @@ export default function ProductCard({ product }: { product: Product }) {
           src={product.images[0]}
           alt={product.name}
           fill
+          unoptimized
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
       <div className="p-4">
-        <p className="text-xs uppercase tracking-widest text-gold">
+        <p className="text-xs uppercase tracking-widest text-goldtext">
           {product.category}
         </p>
         <h3 className="mt-1 font-serif text-lg text-ink">{product.name}</h3>

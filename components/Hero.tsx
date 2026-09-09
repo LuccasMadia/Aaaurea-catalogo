@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { placeholderImage } from "@/lib/placeholder";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:py-24 lg:grid-cols-2 lg:items-center">
         <div>
-          <p className="mb-4 text-sm uppercase tracking-[0.2em] text-gold">
+          <p className="mb-4 text-sm uppercase tracking-[0.2em] text-goldtext">
             Linha cristã · Moda modesta
           </p>
           <h1 className="font-serif text-4xl leading-tight text-ink sm:text-5xl lg:text-6xl">
@@ -24,9 +25,10 @@ export default function Hero() {
         </div>
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
           <Image
-            src="https://placehold.co/900x1125/EDE4D3/2A2320?text=%C3%81urea"
+            src={placeholderImage("Áurea", "EDE4D3", "2A2320", 900, 1125)}
             alt="Modelo vestindo peça oversized da coleção Áurea"
             fill
+            unoptimized
             className="object-cover"
             priority
           />
