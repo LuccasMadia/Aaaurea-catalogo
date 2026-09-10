@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const values = [
   {
     title: "Modéstia com estilo",
@@ -21,12 +23,16 @@ export default function ValuesSection() {
     <section className="bg-white/40">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-10 sm:grid-cols-3">
-          {values.map((value) => (
-            <div key={value.title} className="text-center">
+          {values.map((value, index) => (
+            <Reveal
+              key={value.title}
+              delay={index * 0.08}
+              className="text-center"
+            >
               <div className="mx-auto mb-4 h-px w-10 bg-gold" />
               <h3 className="font-serif text-xl text-ink">{value.title}</h3>
               <p className="mt-3 text-warmgray">{value.description}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
