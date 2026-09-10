@@ -1,7 +1,9 @@
+import Reveal from "./Reveal";
+
 export default function Footer() {
   return (
     <footer id="contato" className="border-t border-ink/10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-12 text-center">
+      <Reveal className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-12 text-center">
         <p className="font-serif text-2xl text-ink">Áurea</p>
         <p className="text-warmgray">
           Loja online · Envio pra todo o Brasil 🇧🇷
@@ -28,7 +30,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Áurea. Peça de portfólio — não é uma
           loja real.
         </p>
-      </div>
+      </Reveal>
     </footer>
   );
 }
