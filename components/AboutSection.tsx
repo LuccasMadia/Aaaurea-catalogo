@@ -1,7 +1,9 @@
+import Reveal from "./Reveal";
+
 export default function AboutSection() {
   return (
     <section id="sobre" className="border-y border-ink/10 bg-white/40">
-      <div className="mx-auto max-w-3xl px-6 py-20 text-center">
+      <Reveal className="mx-auto max-w-3xl px-6 py-20 text-center">
         <p className="mb-3 text-sm uppercase tracking-[0.2em] text-goldtext">
           Nossa história
         </p>
@@ -14,7 +16,7 @@ export default function AboutSection() {
           conforto no caimento over, leveza no estilo e identidade em cada
           detalhe. Roupa que acompanha sua fé, não que compete com ela.
         </p>
-      </div>
+      </Reveal>
     </section>
   );
 }
