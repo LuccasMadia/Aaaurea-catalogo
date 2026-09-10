@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { placeholderImage } from "@/lib/placeholder";
+import Reveal from "./Reveal";
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:py-24 lg:grid-cols-2 lg:items-center">
+      <Reveal className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:py-24 lg:grid-cols-2 lg:items-center">
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.2em] text-goldtext">
             Linha cristã · Moda modesta
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
           <Image
-            src={placeholderImage("Áurea", "EDE4D3", "2A2320", 900, 1125)}
+            src={"/images/hero.webp"}
             alt="Modelo vestindo peça oversized da coleção Áurea"
             fill
             unoptimized
@@ -33,7 +33,7 @@ export default function Hero() {
             priority
           />
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
