@@ -11,7 +11,7 @@ export default function AboutSection() {
           Moda que veste o que você acredita
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-warmgray">
-          A Áurea nasceu pra provar que dá pra vestir modéstia com atitude.
+          A Divinity nasceu pra provar que dá pra vestir modéstia com atitude.
           Cada peça é pensada pra quem quer se vestir com propósito —
           conforto no caimento over, leveza no estilo e identidade em cada
           detalhe. Roupa que acompanha sua fé, não que compete com ela.

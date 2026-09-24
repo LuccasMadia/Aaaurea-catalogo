@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add subtle fade+slide entrance animations (powered by GSAP + ScrollTrigger) across every major section of the Áurea site, giving it a more premium feel without touching colors, typography, or layout.
+**Goal:** Add subtle fade+slide entrance animations (powered by GSAP + ScrollTrigger) across every major section of the Divinity site, giving it a more premium feel without touching colors, typography, or layout.
 
 **Architecture:** A single reusable client component, `components/Reveal.tsx`, owns all GSAP/ScrollTrigger logic (fade-in + 24px upward slide, fires once when ~85% into the viewport, skipped entirely under `prefers-reduced-motion`). Every content component wraps its existing JSX with `<Reveal>` instead of a plain `<div>` — no component gains its own GSAP code.
 
@@ -176,7 +176,7 @@ export default function Hero() {
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
           <Image
             src={"/images/hero.webp"}
-            alt="Modelo vestindo peça oversized da coleção Áurea"
+            alt="Modelo vestindo peça oversized da coleção Divinity"
             fill
             unoptimized
             className="object-cover"
@@ -220,7 +220,7 @@ export default function Hero() {
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
           <Image
             src={"/images/hero.webp"}
-            alt="Modelo vestindo peça oversized da coleção Áurea"
+            alt="Modelo vestindo peça oversized da coleção Divinity"
             fill
             unoptimized
             className="object-cover"
@@ -276,7 +276,7 @@ export default function AboutSection() {
           Moda que veste o que você acredita
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-warmgray">
-          A Áurea nasceu pra provar que dá pra vestir modéstia com atitude.
+          A Divinity nasceu pra provar que dá pra vestir modéstia com atitude.
           Cada peça é pensada pra quem quer se vestir com propósito —
           conforto no caimento over, leveza no estilo e identidade em cada
           detalhe. Roupa que acompanha sua fé, não que compete com ela.
@@ -303,7 +303,7 @@ export default function AboutSection() {
           Moda que veste o que você acredita
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-warmgray">
-          A Áurea nasceu pra provar que dá pra vestir modéstia com atitude.
+          A Divinity nasceu pra provar que dá pra vestir modéstia com atitude.
           Cada peça é pensada pra quem quer se vestir com propósito —
           conforto no caimento over, leveza no estilo e identidade em cada
           detalhe. Roupa que acompanha sua fé, não que compete com ela.
@@ -669,13 +669,13 @@ export default function Footer() {
   return (
     <footer id="contato" className="border-t border-ink/10">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-12 text-center">
-        <p className="font-serif text-2xl text-ink">Áurea</p>
+        <p className="font-serif text-2xl text-ink">Divinity</p>
         <p className="text-warmgray">
           Loja online · Envio pra todo o Brasil 🇧🇷
         </p>
         <div className="flex gap-6 text-sm uppercase tracking-widest text-warmgray">
           <a
-            href="https://www.instagram.com/aaaurea_/"
+            href="https://www.instagram.com/aadivinity_/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-goldtext"
@@ -692,7 +692,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="mt-4 text-xs text-warmgray/70">
-          © {new Date().getFullYear()} Áurea. Peça de portfólio — não é uma
+          © {new Date().getFullYear()} Divinity. Peça de portfólio — não é uma
           loja real.
         </p>
       </div>
@@ -710,13 +710,13 @@ export default function Footer() {
   return (
     <footer id="contato" className="border-t border-ink/10">
       <Reveal className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-12 text-center">
-        <p className="font-serif text-2xl text-ink">Áurea</p>
+        <p className="font-serif text-2xl text-ink">Divinity</p>
         <p className="text-warmgray">
           Loja online · Envio pra todo o Brasil 🇧🇷
         </p>
         <div className="flex gap-6 text-sm uppercase tracking-widest text-warmgray">
           <a
-            href="https://www.instagram.com/aaaurea_/"
+            href="https://www.instagram.com/aadivinity_/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-goldtext"
@@ -733,7 +733,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="mt-4 text-xs text-warmgray/70">
-          © {new Date().getFullYear()} Áurea. Peça de portfólio — não é uma
+          © {new Date().getFullYear()} Divinity. Peça de portfólio — não é uma
           loja real.
         </p>
       </Reveal>

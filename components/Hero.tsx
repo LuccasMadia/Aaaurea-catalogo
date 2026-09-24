@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
           <Image
             src={"/images/hero.webp"}
-            alt="Modelo vestindo peça oversized da coleção Áurea"
+            alt="Modelo vestindo peça oversized da coleção Divinity"
             fill
             unoptimized
             className="object-cover"

@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Áurea | Vestindo Identidade e Propósito",
+  title: "Divinity | Vestindo Identidade e Propósito",
   description:
     "Moda cristã modesta com conceito over. Camisetas, shorts, saias e tops feitos pra vestir sua identidade e propósito.",
 };

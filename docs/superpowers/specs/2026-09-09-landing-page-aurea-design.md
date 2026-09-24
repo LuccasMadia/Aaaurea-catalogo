@@ -1,11 +1,11 @@
-# Landing Page "Áurea" — Peça de Portfólio
+# Landing Page "Divinity" — Peça de Portfólio
 
 **Data:** 2026-09-09
 **Status:** Aprovado para planejamento de implementação
 
 ## Contexto
 
-Peça de portfólio inspirada na loja `@aaaurea_` (Instagram) — moda cristã/modesta,
+Peça de portfólio inspirada na loja `@aadivinity_` (Instagram) — moda cristã/modesta,
 conceito "over" (camisetas e peças oversized), tagline "Vestindo Identidade e
 Propósito". Objetivo: demonstrar, para futuros clientes de nicho similar, como
 seria um protótipo funcional de Fase 1 (padrão Next.js + Supabase que o Lucca

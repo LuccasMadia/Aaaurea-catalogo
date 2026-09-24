@@ -5,7 +5,7 @@
 
 ## Contexto
 
-O site "Áurea" (peça de portfólio, ver `2026-09-09-landing-page-aurea-design.md`)
+O site "Divinity" (peça de portfólio, ver `2026-09-09-landing-page-divinity-design.md`)
 está com o conteúdo e o catálogo prontos, mas sem nenhuma animação — todas as
 seções aparecem estáticas ao carregar/rolar a página. O objetivo aqui é dar um
 ar mais premium usando GSAP: efeitos simples e sutis de entrada (fade + slide)

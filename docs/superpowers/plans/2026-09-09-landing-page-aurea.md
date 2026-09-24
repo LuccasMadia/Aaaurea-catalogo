@@ -1,8 +1,8 @@
-# Landing Page "Áurea" Implementation Plan
+# Landing Page "Divinity" Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
-**Goal:** Build a static Next.js landing page + product detail page for "Áurea", a fictional Christian modest-fashion brand ("conceito over"), as a portfolio piece — catalog with category filter, WhatsApp order flow, no backend.
+**Goal:** Build a static Next.js landing page + product detail page for "Divinity", a fictional Christian modest-fashion brand ("conceito over"), as a portfolio piece — catalog with category filter, WhatsApp order flow, no backend.
 
 **Architecture:** Next.js 14 App Router + TypeScript + Tailwind CSS. Product data lives in a single static file (`data/products.ts`). No database, no API routes, no auth. The home page (`app/page.tsx`) composes presentational sections; a client component (`CatalogSection`) owns the category-filter state; the product detail route (`app/produto/[slug]/page.tsx`) is statically generated via `generateStaticParams` and calls `notFound()` for unknown slugs.
 
@@ -43,7 +43,7 @@
 
 ```json
 {
-  "name": "aurea-landing",
+  "name": "divinity-landing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -193,7 +193,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Áurea | Vestindo Identidade e Propósito",
+  title: "Divinity | Vestindo Identidade e Propósito",
   description:
     "Moda cristã modesta com conceito over. Camisetas, shorts, saias e tops feitos pra vestir sua identidade e propósito.",
 };
@@ -221,7 +221,7 @@ export default function RootLayout({
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-cream">
-      <p className="font-serif text-3xl text-ink">Áurea</p>
+      <p className="font-serif text-3xl text-ink">Divinity</p>
     </main>
   );
 }
@@ -239,8 +239,8 @@ Expected: output contains `Compiled successfully`.
 
 - [x] **Step 12: Verify the page renders**
 
-Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Áurea" && kill %1`
-Expected: prints `Áurea`.
+Run: `npm run dev & sleep 5 && curl -s http://localhost:3000 | grep -o "Divinity" && kill %1`
+Expected: prints `Divinity`.
 
 - [x] **Step 13: Commit**
 
@@ -452,7 +452,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-cream/90 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="font-serif text-2xl tracking-wide text-ink">
-          Áurea
+          Divinity
         </Link>
         <nav className="hidden gap-8 text-sm uppercase tracking-widest text-warmgray sm:flex">
           <a href="/#colecao" className="transition-colors hover:text-gold">
@@ -478,13 +478,13 @@ export default function Footer() {
   return (
     <footer id="contato" className="border-t border-ink/10">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-12 text-center">
-        <p className="font-serif text-2xl text-ink">Áurea</p>
+        <p className="font-serif text-2xl text-ink">Divinity</p>
         <p className="text-warmgray">
           Loja online · Envio pra todo o Brasil 🇧🇷
         </p>
         <div className="flex gap-6 text-sm uppercase tracking-widest text-warmgray">
           <a
-            href="https://www.instagram.com/aaaurea_/"
+            href="https://www.instagram.com/aadivinity_/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-gold"
@@ -501,7 +501,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="mt-4 text-xs text-warmgray/70">
-          © {new Date().getFullYear()} Áurea. Peça de portfólio — não é uma
+          © {new Date().getFullYear()} Divinity. Peça de portfólio — não é uma
           loja real.
         </p>
       </div>
@@ -521,7 +521,7 @@ export default function Home() {
     <>
       <Header />
       <main className="flex min-h-[60vh] items-center justify-center bg-cream">
-        <p className="font-serif text-3xl text-ink">Áurea</p>
+        <p className="font-serif text-3xl text-ink">Divinity</p>
       </main>
       <Footer />
     </>
@@ -588,7 +588,7 @@ export default function Hero() {
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl">
           <Image
             src="https://placehold.co/900x1125/EDE4D3/2A2320?text=%C3%81urea"
-            alt="Modelo vestindo peça oversized da coleção Áurea"
+            alt="Modelo vestindo peça oversized da coleção Divinity"
             fill
             className="object-cover"
             priority
@@ -663,7 +663,7 @@ export default function AboutSection() {
           Moda que veste o que você acredita
         </h2>
         <p className="mt-6 text-lg leading-relaxed text-warmgray">
-          A Áurea nasceu pra provar que dá pra vestir modéstia com atitude.
+          A Divinity nasceu pra provar que dá pra vestir modéstia com atitude.
           Cada peça é pensada pra quem quer se vestir com propósito —
           conforto no caimento over, leveza no estilo e identidade em cada
           detalhe. Roupa que acompanha sua fé, não que compete com ela.
